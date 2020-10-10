@@ -13,6 +13,6 @@
 3. make a new branch.<br/> `git checkout -b branch-name`
 4. push your code into this branch.<br/>
    `git add .`<br/>
-   `git commit`<br/>
+   `git commit -m "Your message here"`<br/>
    `git push origin branch-name`
 5. Make a Pull request
