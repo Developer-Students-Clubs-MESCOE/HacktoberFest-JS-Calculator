@@ -1,4 +1,4 @@
-# Hacktoberfest JS Calculator
+# HacktoberFest JS Calculator
 ## Look at the issues tab to contribute to this project
 
 **Hint** :- You can read about the global Math library in Javascript here https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
