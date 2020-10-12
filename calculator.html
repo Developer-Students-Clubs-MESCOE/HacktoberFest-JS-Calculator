@@ -1,0 +1,80 @@
+<DOCTYPEhtml>
+<html>
+<body><title>CALCULATOR</title></body>
+   <head> 
+      <script> 
+         function nikhil(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+           
+         function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+           
+         function delet() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script> 
+      <style> 
+         .title{ 
+         margin-bottom: 10px; 
+         text-align:center; 
+         width: 50px;  
+         border: solid; 
+         } 
+  
+         input[type="button"] 
+         { 
+         background-color:yellow; 
+         color: black; 
+         border: solid black 2px; 
+         width:100% 
+         } 
+  
+         input[type="text"] 
+         { 
+         background-color:white; 
+         border: solid black 2px; 
+         width:100% 
+         } 
+      </style> 
+   </head> 
+   <body> 
+      <table border="5"> 
+         <tr> 
+            <td ><input type="text" id="result"/></td> 
+            <td><input type="button" value="c" onclick="delet()"/> </td> 
+            <td><input type="button" value="." onclick="nikhil('.')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="1" onclick="nikhil('1')"/> </td> 
+            <td><input type="button" value="2" onclick="nikhil('2')"/> </td> 
+            <td><input type="button" value="3" onclick="nikhil('3')"/> </td> 
+            <td><input type="button" value="/" onclick="nikhil('/')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="4" onclick="nikhil('4')"/> </td> 
+            <td><input type="button" value="5" onclick="nikhil('5')"/> </td> 
+            <td><input type="button" value="6" onclick="nikhil('6')"/> </td> 
+            <td><input type="button" value="-" onclick="nikhil('-')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="7" onclick="nikhil('7')"/> </td> 
+            <td><input type="button" value="8" onclick="nikhil('8')"/> </td> 
+            <td><input type="button" value="9" onclick="nikhil('9')"/> </td> 
+            <td><input type="button" value="+" onclick="nikhil('+')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="10" onclick="nikhil('10')"/> </td> 
+            <td><input type="button" value="0" onclick="nikhil('0')"/> </td> 
+            <td><input type="button" value="=" onclick="solve()"/> </td> 
+            <td><input type="button" value="*" onclick="nikhil('*')"/> </td> 
+         </tr> 
+      </table> 
+   </body> 
+</html>    
