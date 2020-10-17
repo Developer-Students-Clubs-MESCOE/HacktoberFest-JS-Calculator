@@ -15,3 +15,9 @@ document.querySelectorAll('.num').forEach(e => {
 		addToText(e.textContent)
 	})
 })
+
+document.querySelectorAll('.clear').forEach(e => {
+	e.addEventListener('click', () => {
+		clear()
+	})
+})
